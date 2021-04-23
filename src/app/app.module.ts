@@ -1,3 +1,4 @@
+import { DragDropModule } from "@angular/cdk/drag-drop";
 import { APP_BASE_HREF } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
@@ -46,7 +47,7 @@ import { SeasonalChartComponent } from "./time-series-menus/seasonal-chart.compo
 import { SeasonalTimeSeriesGraphComponent } from "./time-series-menus/seasonal-time-series-graph.component";
 import { TimeSeriesStatisticsComponent } from "./time-series-statistics.component";
 import { TimeseriesMenuComponent } from "./timeseries-menu.component";
-import { TutorialMenuComponent } from './tutorial-menu/tutorial-menu.component';
+import { TutorialMenuComponent } from "./tutorial-menu/tutorial-menu.component";
 import { ViewComponent } from "./view.component";
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { ViewComponent } from "./view.component";
     HttpClientModule,
     MatSnackBarModule,
     MatStepperModule,
-    MatGridListModule
+    MatGridListModule,
+    DragDropModule
   ],
   providers: [
     GetJson,
